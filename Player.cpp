@@ -11,9 +11,19 @@ void Player::Initialize() {
 }
 
 void Player::Update() {
+	if (inputManager_->IsPushKey(DIK_D)) {
+		position_.x += speed_;
+	} else if (inputManager_->IsPushKey(DIK_A)) {
+		position_.x -= speed_;
+	}
+	if (inputManager_->IsPushKey(DIK_W)) {
+		position_.y -= speed_;
+	} else if (inputManager_->IsPushKey(DIK_S)) {
+		position_.y += speed_;
+	}
 
 }
 
 void Player::Draw() {
-	Novice::DrawEllipse(static_cast<int>(position_.x), static_cast<int>(position_.y), redius_, redius_, 0.0f, RED, kFillModeSolid);
+	Novice::DrawEllipse(static_cast<int>(position_.x), static_cast<int>(position_.y), redius_, redius_, 0.0f, WHITE, kFillModeSolid);
 }

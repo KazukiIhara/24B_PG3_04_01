@@ -18,9 +18,7 @@ void TitleScene::Update() {
 	ImGui::Begin("TitleScene");
 	ImGui::End();
 #endif // _DEBUG
-
-	// テスト用
-	if (inputManager_->IsPushKey(DIK_SPACE)) {
+	if (inputManager_->IsTriggerkey(DIK_SPACE)) {
 		sceneNumber = kStage;
 	}
 }

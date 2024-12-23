@@ -14,6 +14,8 @@ public:
 	void Update()override;
 	void Draw()override;
 private:
+	// プレイヤー
+	std::unique_ptr<Player> player_;
 	// 敵
 	std::unique_ptr<Enemy> enemy_;
 };

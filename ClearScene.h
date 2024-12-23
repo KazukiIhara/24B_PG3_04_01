@@ -8,5 +8,8 @@ public:
 	void Initialize()override;
 	void Update()override;
 	void Draw()override;
+private:
+	int pushSpaceTexHandle_ = 0;
+	int gameClearTexHandle_ = 0;
 };
 

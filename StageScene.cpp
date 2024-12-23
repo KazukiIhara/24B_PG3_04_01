@@ -7,10 +7,12 @@
 
 StageScene::StageScene(InputManager* inputManager) {
 	inputManager_ = inputManager;
+	player_ = std::make_unique<Player>(inputManager);
 	enemy_ = std::make_unique<Enemy>();
 }
 
 void StageScene::Initialize() {
+	player_->Initialize();
 	enemy_->Initialize();
 }
 
@@ -20,6 +22,9 @@ void StageScene::Update() {
 	ImGui::End();
 #endif // _DEBUG
 
+	// プレイヤーの更新
+	player_->Update();
+
 	// 敵の更新
 	enemy_->Update();
 
@@ -28,10 +33,16 @@ void StageScene::Update() {
 		sceneNumber = kClear;
 	}
 
+	// テスト用
+	if (inputManager_->IsTriggerkey(DIK_SPACE)) {
+		sceneNumber = kClear;
+	}
+
 }
 
 void StageScene::Draw() {
-
+	// プレイヤーの描画
+	player_->Draw();
 	// 敵描画
 	enemy_->Draw();
 }

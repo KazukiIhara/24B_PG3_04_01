@@ -16,5 +16,6 @@ private:
 	InputManager* inputManager_ = nullptr;
 	const KamataEngine::Vector2 kDefaultPosition_ = { 1280 / 2, 720 / 2 };
 	KamataEngine::Vector2 position_ = { 0,0 };
+	int speed_ = 4;
 	int redius_ = 24;
 };
