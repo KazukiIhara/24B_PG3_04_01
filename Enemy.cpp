@@ -3,6 +3,7 @@
 #include <Novice.h>
 
 void Enemy::Initialize() {
+	state_ = kAllive;
 	position_ = kDefaultPosition_;
 }
 

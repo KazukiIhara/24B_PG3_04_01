@@ -22,6 +22,8 @@ public:
 	KamataEngine::Vector2 GetPosition();
 	int GetRadius();
 
+
+
 private:
 	const KamataEngine::Vector2 kDefaultPosition_ = { 1280 / 2, 720 / 2 - 200 };
 	State state_ = kAllive;

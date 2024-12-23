@@ -13,6 +13,8 @@ public:
 	void Draw();
 
 	void SetIsActive(bool isActive);
+	bool GetIsActive();
+	int GetRadius();
 
 	KamataEngine::Vector2 GetPosition();
 

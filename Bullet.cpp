@@ -38,6 +38,14 @@ void Bullet::SetIsActive(bool isActive) {
 	isActive_ = isActive;
 }
 
+bool Bullet::GetIsActive() {
+	return isActive_;
+}
+
+int Bullet::GetRadius() {
+	return size_;
+}
+
 KamataEngine::Vector2 Bullet::GetPosition() {
 	return position_;
 }
