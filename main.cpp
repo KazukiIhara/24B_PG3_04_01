@@ -7,8 +7,8 @@ const char kWindowTitle[] = "LE2A_01_イハラ_カズキ";
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	std::unique_ptr<GameManager> gamemanager;
-	gamemanager = std::make_unique<GameManager>();
+	gamemanager = std::make_unique<GameManager>(kWindowTitle);
 
-	gamemanager->Run(kWindowTitle);
+	gamemanager->Run();
 
 }

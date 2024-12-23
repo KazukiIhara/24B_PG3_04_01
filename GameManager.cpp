@@ -2,7 +2,10 @@
 
 #include <Novice.h>
 
-GameManager::GameManager() {
+GameManager::GameManager(const char* kWindowTitle) {
+	// ライブラリの初期化
+	Novice::Initialize(kWindowTitle, 1280, 720);
+
 	// インプットマネージャのインスタンスを生成
 	inputManager_ = std::make_unique<InputManager>();
 	// 各シーンの配列
@@ -12,12 +15,10 @@ GameManager::GameManager() {
 
 	// 初期シーンの設定
 	currentSceneNumber_ = kTitle;
-
+	sceneArr_[kTitle]->Initialize();
 }
 
-int GameManager::Run(const char* kWindowTitle) {
-	// ライブラリの初期化
-	Novice::Initialize(kWindowTitle, 1280, 720);
+int GameManager::Run() {
 
 	// ウィンドウの×ボタンが押されるまでループ
 	while (Novice::ProcessMessage() == 0) {

@@ -8,11 +8,11 @@
 
 class GameManager {
 public:
-	GameManager();
+	GameManager(const char* kWindowTitle);
 	~GameManager() = default;
 
 	// 実行
-	int Run(const char* kWindowTitle);
+	int Run();
 
 private:
 	// インプットマネージャのインスタンス

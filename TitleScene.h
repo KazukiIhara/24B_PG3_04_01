@@ -9,6 +9,6 @@ public:
 	void Update()override;
 	void Draw()override;
 private:
-	
+	int pushSpaceTextureHandle_ = 0;
 };
 
