@@ -21,9 +21,12 @@ void Player::Update() {
 	} else if (inputManager_->IsPushKey(DIK_S)) {
 		position_.y += speed_;
 	}
-
 }
 
 void Player::Draw() {
 	Novice::DrawEllipse(static_cast<int>(position_.x), static_cast<int>(position_.y), redius_, redius_, 0.0f, WHITE, kFillModeSolid);
+}
+
+KamataEngine::Vector2 Player::GetPosition() {
+	return position_;
 }

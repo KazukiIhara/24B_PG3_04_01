@@ -1,11 +1,13 @@
 #pragma once
 
 #include <memory>
+#include <vector>
 
 #include "IScene.h"
 
 #include "Player.h"
 #include "Enemy.h"
+#include "Bullet.h"
 
 class StageScene :public IScene {
 public:
@@ -14,9 +16,11 @@ public:
 	void Update()override;
 	void Draw()override;
 private:
-	// プレイヤー
-	std::unique_ptr<Player> player_;
 	// 敵
 	std::unique_ptr<Enemy> enemy_;
+	// プレイヤー
+	std::unique_ptr<Player> player_;
+	// 弾
+	std::unique_ptr<Bullet> bullet_;
 };
 
