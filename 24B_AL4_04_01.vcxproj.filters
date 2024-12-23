@@ -29,9 +29,14 @@
     <Filter Include="Scenes\Clear">
       <UniqueIdentifier>{f4c45b43-684b-441d-b38a-1ffda6caa6eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameManager">
+      <UniqueIdentifier>{5506a820-8602-4913-9f87-7c224bc6d1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputManager">
+      <UniqueIdentifier>{d48c1d1d-3bd8-471d-afe9-b5d97e97b1e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
       <Filter>KamataEngine\Adapter</Filter>
     </ClCompile>
@@ -46,6 +51,13 @@
     </ClCompile>
     <ClCompile Include="IScene.cpp">
       <Filter>IScene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="InputManager.cpp">
+      <Filter>InputManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +153,12 @@
     </ClInclude>
     <ClInclude Include="IScene.h">
       <Filter>IScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>InputManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
