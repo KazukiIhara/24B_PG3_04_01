@@ -14,11 +14,35 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IScene">
+      <UniqueIdentifier>{07fab822-c00f-4794-82ee-421d4e701020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{d52c3076-c7e2-49d8-b989-cf5da139f7d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Title">
+      <UniqueIdentifier>{d2e3b7ad-c6c4-4758-8196-630ce444a82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Stage">
+      <UniqueIdentifier>{f39e241e-c9b2-406b-98b8-aa3ad31bccb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Clear">
+      <UniqueIdentifier>{f4c45b43-684b-441d-b38a-1ffda6caa6eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
       <Filter>KamataEngine\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scenes\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>Scenes\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearScene.cpp">
+      <Filter>Scenes\Clear</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +126,15 @@
     </ClInclude>
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h">
       <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scenes\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>Scenes\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearScene.h">
+      <Filter>Scenes\Clear</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
