@@ -35,6 +35,12 @@
     <Filter Include="InputManager">
       <UniqueIdentifier>{d48c1d1d-3bd8-471d-afe9-b5d97e97b1e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{0a7599b5-c2b4-4678-9d55-4d31e5a0842d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{681f993a-d19f-423f-a0e6-717437156716}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -58,6 +64,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="InputManager.cpp">
       <Filter>InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +171,12 @@
     </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
