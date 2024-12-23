@@ -44,6 +44,9 @@
     <ClCompile Include="ClearScene.cpp">
       <Filter>Scenes\Clear</Filter>
     </ClCompile>
+    <ClCompile Include="IScene.cpp">
+      <Filter>IScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -135,6 +138,9 @@
     </ClInclude>
     <ClInclude Include="ClearScene.h">
       <Filter>Scenes\Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>IScene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
